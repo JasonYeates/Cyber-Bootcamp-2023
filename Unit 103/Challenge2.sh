@@ -4,4 +4,4 @@
 
 name=$Jason
 
-echo "Welcome to the Class name"
+echo "Welcome to the Class $name"
