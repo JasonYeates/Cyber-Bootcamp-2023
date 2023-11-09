@@ -4,17 +4,10 @@
 # We are going to take a varibale with the number and have the computer tell us if its greater than 5 less than 5 or equals 5
 
 
+
 if [ $number > 5 ]
      then echo "Number is greater than 5"
 elif [ $number < 5 ]
     then echo "Number is less than 5"
 else [ $number=5 ]
-fi
-    then echo "Number is 5"
-fiif [ $number > 5 ]
-     then echo "Number is greater than 5"
-elif [ $number < 5 ]
-    then echo "Number is less than 5"
-else [ $number = 5 ]
-    then echo "Number is 5"
 fi
