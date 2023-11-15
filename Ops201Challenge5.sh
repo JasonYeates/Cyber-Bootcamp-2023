@@ -11,6 +11,8 @@
 # Output the results to a single .txt file and open it with your favorite text editor.
 
 # For this challenge you must use at least one variable and one function
+read -p "Enter a Domain:" 
+
 
 function gather_info() {
     whois $domain >> results.txt
