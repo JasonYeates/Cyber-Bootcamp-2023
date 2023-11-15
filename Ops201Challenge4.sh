@@ -6,7 +6,7 @@
 echo "Enter two numbers to add"
 read num1
 read num2
-total=$(($num1 + $num2))
+total=$(($num1 / $num2))
 echo $total
 
 
