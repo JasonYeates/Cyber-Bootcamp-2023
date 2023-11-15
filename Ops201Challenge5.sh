@@ -12,5 +12,13 @@
 
 # For this challenge you must use at least one variable and one function
 
-echo "Enter a domain name"
-read input
+function gather_info() {
+    whois $domain >> results.txt
+    dig $domain >> results.txt
+    host $domain >> results.txt
+    nslookup $domain >> results.txt
+
+}
+
+xdg-open results.txt
+gather_info
