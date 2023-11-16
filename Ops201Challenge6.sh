@@ -8,5 +8,18 @@
 # Navigates to the directory input by the user and changes all files inside it to the input setting.
 # Prints to the screen the directory contents and the new permissions settings of everything in the directory or file you selected.
 
-echo "input directory"
-go to $directory
+echo "Enter the directory:"
+read -r dir
+
+if [ ! -d "$dir" ]; then
+    echo "Creating Directory"
+    mkdir -p "$dir"
+fi
+
+echo "Enter the permissions number:"
+read -r perm
+
+cd "$dir"
+chmod "$perm" .
+echo "The directory contents and permissions are:"
+ls -l

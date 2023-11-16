@@ -1,0 +1,12 @@
+echo "Enter the directory:"
+read -r dir
+if [ -d "$dir" ]; then
+echo "enter the permissions number:"
+read perm
+cd $dir
+chmod $perm .
+echo "the directory contents and permissions are:"
+ls -l
+else
+echo "the directory does not exist."
+fi

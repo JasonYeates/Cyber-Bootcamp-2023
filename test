@@ -1,0 +1,19 @@
+echo "Enter the directory:"
+read -r dir
+mkdir -p "$dir"
+
+if [ -d "$dir" ]; then
+    echo "Enter the permissions number:"
+    read -r perm
+
+    if [[ $perm =~ ^[0-7]{1,3}$ ]]; then
+        cd "$dir" || exit 1  # Change to the directory, exit if unsuccessful
+        chmod "$perm" .      # Set permissions for the current directory
+        echo "The directory contents and permissions are:"
+        ls -l
+    else
+        echo "Invalid permissions. Please enter a valid three-digit octal number."
+    fi
+else
+    echo "The directory does not exist."
+fi
