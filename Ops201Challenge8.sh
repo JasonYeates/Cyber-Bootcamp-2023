@@ -12,7 +12,7 @@ do
 echo "Choose a Menu option:"
 echo "1. Hello World"
 echo "2. Ping a website or IP address:"
-echo "3 Run ifconfig"
+echo "3. Run ifconfig"
 
 read input
     if [ $input = 1 ]
