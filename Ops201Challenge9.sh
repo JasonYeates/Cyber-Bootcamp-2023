@@ -3,8 +3,9 @@
 # Have the script echo out what are current number is
 
 x=1
-until [ $x = 10 ]
+until [ $x = 11 ]
 do
     echo "x is $x"
     ((x++))
+    sleep 1
 done
