@@ -10,12 +10,12 @@
 # Output Format
 # One word: either "SCALENE" or "EQUILATERAL" or "ISOSCELES" (quotation marks excluded).
 
-echo "Triangle Check"
-echo "please type the first integer"
+echo "Enter 3 integers for your triangle"
+echo "enter the first integer"
 read x
-echo "please type the second integer"
+echo "enter the second integer"
 read y
-echo "please type the third integer"
+echo "enter the third integer"
 read z
 if [ $x -eq $y -a $y -eq $z ]
 then echo "Equilateral Triangle"
