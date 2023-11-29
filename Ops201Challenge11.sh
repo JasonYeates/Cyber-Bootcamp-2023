@@ -7,10 +7,10 @@ echo "How is your day?"
 read response
 case "$response" in
     "good")
-        echo "Awesome!!!!"
+        echo "Thats awesome!!!!"
         ;;
     "bad")
-        echo "Not awesome."
+        echo "Thats not awesome."
         ;;
     *)
         echo "Invalid response"
