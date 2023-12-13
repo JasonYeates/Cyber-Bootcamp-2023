@@ -1,6 +1,4 @@
-# Objectives
-# Create if statements using these logical conditionals below. Each statement should print information to the screen depending on if the condition is met.
-
+# Sample values for demonstration
 a = 5
 b = 10
 
@@ -40,14 +38,22 @@ if a >= b:
 else:
     print("a is less than b")
 
-# If statement with elif and else
-c = 5
+# If statement with a logical conditional and elif
+c = 7
 if a > b:
     print("a is greater than b")
-elif a == b:
-    print("a is equal to b")
-else:
+elif a < b:
     print("a is less than b")
+else:
+    print("a is equal to b")
+
+# If statement with both elif and else
+if a > b:
+    print("a is greater than b")
+elif a < b:
+    print("a is less than b")
+else:
+    print("a is equal to b")
 
 # If statement with and between conditions
 if a > 0 and b > 0:
