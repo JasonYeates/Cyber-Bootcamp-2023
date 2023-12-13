@@ -24,5 +24,5 @@ if [ $input -ge 2 ] && [ $input -le 5 ]; then
     echo "Valid Number"
     echo "Your number is $input"
 else
-    echo "Not Valid!"
+    echo "Invalid Number"
 fi
