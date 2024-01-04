@@ -1,6 +1,6 @@
 # Sample values for demonstration
-a = 5
-b = 10
+a = input("Enter a number for a ")
+b = input("Enter a number for b ")
 
 # Equals: a == b
 if a == b:
